@@ -4,4 +4,5 @@
     <string name="etiqueta_celcius">C°</string>
     <string name="etiqueta_fahrenheit">F°</string>
     <string name="etiqueta_kelvin">K°</string>
+    <string name="placeholder">Ingrese temperatura</string>
 </resources>

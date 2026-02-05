@@ -8,12 +8,120 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/etiqueta_principal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/tvCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/etiqueta_celcius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCelcius" />
+
+    <TextView
+        android:id="@+id/tvFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/etiqueta_fahrenheit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCelcius" />
+
+    <TextView
+        android:id="@+id/tvKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/etiqueta_kelvin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFahrenheit" />
+
+    <EditText
+        android:id="@+id/etCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:hint="@string/placeholder"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvInicio"
+        app:layout_constraintTop_toBottomOf="@+id/tvInicio" />
+
+    <EditText
+        android:id="@+id/etFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/placeholder"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/etCelcius"
+        app:layout_constraintTop_toBottomOf="@+id/etCelcius" />
+
+    <EditText
+        android:id="@+id/etKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="@string/placeholder"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/etFahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/etFahrenheit" />
+
+    <Button
+        android:id="@+id/btnCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:text="@string/etiqueta_celcius"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnFahrenheit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/etiqueta_fahrenheit"
+        app:layout_constraintEnd_toStartOf="@+id/btnKelvin"
+        app:layout_constraintTop_toBottomOf="@+id/etKelvin" />
+
+    <Button
+        android:id="@+id/btnKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_kelvin"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnFahrenheit"
+        app:layout_constraintEnd_toEndOf="@+id/etKelvin"
+        app:layout_constraintStart_toEndOf="@+id/etKelvin" />
+
+    <TextView
+        android:id="@+id/tvAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="42dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/btnFahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/btnFahrenheit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
