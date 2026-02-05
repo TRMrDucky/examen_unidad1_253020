@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExamenU1</string>
+    <string name="etiqueta_principal">Convertidor de grados</string>
+    <string name="etiqueta_celcius">C°</string>
+    <string name="etiqueta_fahrenheit">F°</string>
+    <string name="etiqueta_kelvin">K°</string>
+</resources>
